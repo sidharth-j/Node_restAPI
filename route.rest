@@ -1,0 +1,24 @@
+GET http://localhost:3000/cars
+
+###
+//send data
+POST http://localhost:3000/cars
+Content-Type: application/json
+{
+    "name":"car1"
+    "isAvailable":true
+}
+
+###
+
+
+GET http://localhost:3000/cars/id
+
+
+###
+
+PATCH http://localhost:3000/cars/id
+{
+    "name":"car1"
+    "isAvailable":false
+}
